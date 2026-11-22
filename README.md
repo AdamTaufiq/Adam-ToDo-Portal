@@ -28,7 +28,9 @@ Open http://127.0.0.1:5175
 4. For email confirmation during testing, configure Authentication > Providers > Email as preferred.
 5. For production, configure the Site URL and redirect URLs to your deployed GitHub/Supabase frontend URL.
 
-## Deploy later
+## Continuous deployment
+
+GitHub Actions validates every push and pull request. The linked Vercel project deploys the `main` branch automatically after a successful GitHub push.
 
 This is a Vite frontend with Vercel Serverless API functions. Deploy it to Vercel from GitHub. Supabase provides authentication and PostgreSQL; the browser/API uses the public anon key with Row Level Security protecting each user's rows.
 
