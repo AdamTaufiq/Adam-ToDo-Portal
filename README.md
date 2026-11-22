@@ -32,6 +32,10 @@ Open http://127.0.0.1:5175
 
 GitHub Actions validates every push and pull request. The linked Vercel project deploys the `main` branch automatically after a successful GitHub push.
 
+GitHub Pages deployment is also configured in `.github/workflows/pages.yml` and publishes the Vite `dist` folder from the `main` branch.
+
+> Note: GitHub Pages hosts static files only. The portal's `/api` serverless routes require the Vercel deployment (or another API host). Set `VITE_API_BASE_URL` to the deployed API URL if the Pages frontend is used.
+
 This is a Vite frontend with Vercel Serverless API functions. Deploy it to Vercel from GitHub. Supabase provides authentication and PostgreSQL; the browser/API uses the public anon key with Row Level Security protecting each user's rows.
 
 ## Vercel API

@@ -49,6 +49,7 @@ export default defineConfig(({ mode }) => {
   Object.assign(process.env, env)
 
   return {
+    base: process.env.GITHUB_ACTIONS ? '/Adam-ToDo-Portal/' : '/',
     plugins: [vue(), localApiPlugin()]
   }
 })
