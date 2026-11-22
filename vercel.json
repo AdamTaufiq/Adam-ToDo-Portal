@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/api/health", "destination": "/api/health.js" },
+    { "source": "/api/todos", "destination": "/api/todos.js" },
+    { "source": "/api/auth/login", "destination": "/api/auth/login.js" },
+    { "source": "/api/auth/register", "destination": "/api/auth/register.js" },
+    { "source": "/api/auth/me", "destination": "/api/auth/me.js" }
+  ]
+}
